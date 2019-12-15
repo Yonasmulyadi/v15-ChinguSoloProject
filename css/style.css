@@ -1,0 +1,102 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+/** 
+    navigation menu, including:
+    1. Navigation responsive button
+    2. Navigation's contents
+*/
+
+#navigation-button {
+    position: absolute;
+    right: 5vw;
+    top: 2vh;
+    cursor: pointer;
+}
+
+#navigation-button .strip {
+    height: 4px;
+    width: 30px;
+    background-color: #ffd05a;
+    display: block;
+    margin-top: 4px;
+}
+
+#navigation-section {
+    text-align: center;
+    background: #40596b;
+    height: 0vh;
+    overflow: hidden;
+    padding-top: 8vh;
+    transition: all .3s ease-in-out;
+}
+
+#navigation-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    padding-top: 3vh;
+}
+
+#navigation-section ul li {
+    padding-bottom: 1.4rem;
+    font-size: 1.1rem;
+}
+
+#navigation-section ul li a {
+    color: #ffd05a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 568px){
+    #navigation-button .strip {
+        width: 5vw;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #navigation-section {
+        padding-top: 0;
+        height: 8vh !important;
+    }
+
+    #navigation-section ul {
+        display: flex;
+        width: 70%;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    #navigation-section ul li a {
+        font-size: 1.2rem;
+    }
+
+    #navigation-button {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    #navigation-section {
+        height: 10vh !important;
+    }
+
+    #navigation-section ul li a {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    #navigation-section ul li a {
+        font-size: 1.4rem;
+    }
+}
+
