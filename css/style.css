@@ -14,10 +14,17 @@ body {
     2. Navigation's contents
 */
 
+#navigation {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1000;
+}
+
 #navigation-button {
     position: absolute;
     right: 5vw;
-    top: 2vh;
+    top: 3.5vh;
     cursor: pointer;
 }
 
@@ -34,7 +41,7 @@ body {
     background: #40596b;
     height: 0vh;
     overflow: hidden;
-    padding-top: 8vh;
+    padding-top: 12vh;
     transition: all .3s ease-in-out;
 }
 
@@ -56,13 +63,78 @@ body {
     cursor: pointer;
 }
 
+/** 
+    Jumbotron
+*/
+
+#jumbotron {
+    text-align: center;
+    padding-top: 12vh;
+    background: #55c0ec;
+    height: 60vh;
+}
+
+#jumbotron__title {
+    font-size: 3.5rem;
+    transform: scale(1, 1.4);
+    font-weight: 400;
+    color: rgba(0,0,0,.6);
+}
+
+#jumbotron__title span {
+    font-weight: 700;
+}
+
+#jumbotron__note {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+#jumbotron__link {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    display: block;
+    background: #fff;
+    display: flex;
+    height: 11vh;
+    border-radius: 5px;
+    justify-content: center;
+    color: rgba(0,0,0,.6);
+    margin-top: 6vh;
+}
+
+#jumbotron__link img {
+    width: 7vw;
+}
+
+#jumbotron__link span {
+    padding-top: 4vh;
+    padding-left: 7vw;
+    transform: scale(1.2,1.5);
+}
+
 @media only screen and (min-width: 568px){
+    .container {
+        width: 50%;
+    }
     #navigation-button .strip {
         width: 5vw;
+    }
+
+
+    #jumbotron__link span {
+        padding-top: 4vh;
+        padding-left: 4vw;
+        transform: scale(1.3,1.6);
     }
 }
 
 @media only screen and (min-width: 768px){
+    .container {
+        width: 80%;
+    }
+    
     #navigation-section {
         padding-top: 0;
         height: 8vh !important;
@@ -82,6 +154,14 @@ body {
     #navigation-button {
         display: none;
     }
+
+    #jumbotron {
+        padding-top: 20vh;
+    }
+
+    #jumbotron__link span {
+        padding-top: 4.5vh;
+    }
 }
 
 @media only screen and (min-width: 1024px){
@@ -90,13 +170,44 @@ body {
     }
 
     #navigation-section ul li a {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
+    }
+
+    #jumbotron__title {
+        font-size: 4.5rem;
+    }
+
+    #jumbotron__note {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
     }
 }
 
 @media only screen and (min-width: 1200px){
     #navigation-section ul li a {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
+    }
+
+    #jumbotron__title {
+        font-size: 4.9rem;
+    }
+
+    #jumbotron__note {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    #jumbotron__link {
+        height: 13vh;
+    }
+    
+    #jumbotron__link img {
+        width: 5vw;
+    }
+    
+    #jumbotron__link span {
+        font-size: 1.7rem;
+        padding-top: 4.2vh;
     }
 }
 
