@@ -12,10 +12,8 @@ body {
     margin: auto;
 }
 
-/** 
-    navigation menu, including:
-    1. Navigation responsive button
-    2. Navigation's contents
+/**
+    navigation
 */
 
 #navigation {
@@ -163,6 +161,64 @@ body {
     margin-bottom: 5vh;
 }
 
+/**
+    features
+*/
+
+#features {
+    background: #90ddaa;
+    height: 260vh;
+}
+
+.features__title {
+    font-size: 1.7rem;
+    font-weight: 400;
+    transform: scale(1.1,1.5);
+    text-align: center;
+    position: relative;
+    margin-top: 5vh;
+    padding-top: 5vh;
+}
+
+.features__card {
+    background-color: #40596b;
+    padding-top: 7vh;
+    margin-bottom: 10vh;
+    position: relative;
+}
+
+.features__card:nth-of-type(1) {
+    margin-top: 10vh;
+}
+
+.features__card img {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.features__card p {
+    background-color: #fff;
+    height: 16vh;
+    margin-top: 7vh;
+    padding-top: 4vh;
+    text-align: center;
+    line-height: 4vh;
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+.features__card p span {
+    color: rgb(197, 56, 56);
+    background-color: rgb(250, 245, 245);
+}
+
+.features__card:nth-of-type(1) p a {
+    color: blue;
+}
+
+
+
 @media only screen and (min-width: 568px){
     .container {
         width: 50%;
@@ -184,6 +240,14 @@ body {
 
     .product-explanation__title::after {
         left: 30%;
+    }
+
+    .features__container {
+        width: 80%;
+    }
+
+    #features {
+        height: 310vh;
     }
 }
 
@@ -237,6 +301,33 @@ body {
         left: 37%;
         top: 5vh;
     }
+
+    .features__container {
+        width: 90%;
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .features__card {
+        width: 47%;
+        height: 30em;
+    }
+
+    .features__card:nth-of-type(2) {
+        margin-top: 10vh;
+    }
+
+    .features__card:nth-of-type(3) {
+        width: 100%;
+    }
+
+    .features__card:nth-of-type(3) img {
+        width: 40%;
+    }
 }
 
 @media only screen and (min-width: 1024px){
@@ -264,6 +355,18 @@ body {
     .product-explanation__title::after {
         left: 41%;
         top: 5vh;
+    }
+
+    .features__title {
+        font-size: 3rem;
+    }
+
+    .features__card p {
+        font-size: 1.4rem;
+    }
+
+    .features__card:nth-of-type(3) {
+        margin-top: 10vh;
     }
 }
 
@@ -301,6 +404,18 @@ body {
     .product-explanation__title::after {
         left: 43%;
         top: 5.5vh;
+    }
+
+    .features__card {
+        width: 30% !important;
+        height: 30em;
+    }
+    .features__card:nth-of-type(3) img {
+        width: 70%;
+    }
+
+    .features__card p {
+        font-size: 1.1rem;
     }
 }
 
