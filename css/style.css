@@ -63,6 +63,11 @@ body {
     color: #ffd05a;
     text-decoration: none;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#navigation-section ul li a:hover {
+    color: #fff;
 }
 
 /** 
@@ -104,10 +109,21 @@ body {
     justify-content: center;
     color: rgba(0,0,0,.6);
     margin-top: 6vh;
+    transition: all .3s ease-in;
 }
 
 .slack-link img {
     width: 7vw;
+    transition: all .3s ease-in;
+}
+
+#jumbotron .slack-link:hover {
+    transform: scale(1.006);
+    background: rgb(250, 252, 250);
+}
+
+#jumbotron .slack-link:hover img {
+    transform: scale(1.3) rotate(18deg);
 }
 
 .slack-link span {
@@ -218,6 +234,10 @@ body {
     color: blue;
 }
 
+/**
+    add to Slack
+*/
+
 .add-to-slack__title {
     font-size: 1.7rem;
     font-weight: 400;
@@ -242,7 +262,25 @@ body {
 #add-to-slack .slack-link {
     background: #40596b;
     color: #fff;
+    transition: all .3s ease-in;
 }
+
+#add-to-slack .slack-link img {
+    transition: all .3s ease-in;
+}
+
+#add-to-slack .slack-link:hover {
+    transform: scale(.97);
+    background: rgb(61, 60, 60);
+}
+
+#add-to-slack .slack-link:hover img {
+    transform: scale(1.3) rotate(20deg)
+}
+
+/**
+    footer
+*/
 
 #footer {
     background:#40596b;
@@ -279,15 +317,27 @@ body {
         width: 50%;
     }
 
+    /**
+        Navigation
+    */
+
     #navigation-button .strip {
         width: 5vw;
     }
+
+    /**
+        Jumbotron
+    */
 
     .slack-link span {
         padding-top: 4vh;
         padding-left: 4vw;
         transform: scale(1.3,1.6);
     }
+
+    /**
+        Product-explanation
+    */
 
     .product-explanation__wrapper {
         width: 80%;
@@ -296,6 +346,10 @@ body {
     .product-explanation__title::after {
         left: 30%;
     }
+
+    /**
+        Features
+    */
 
     .features__container {
         width: 80%;
@@ -319,6 +373,11 @@ body {
     .container {
         width: 80%;
     }
+
+    /**
+        Navigation
+    */
+
     
     #navigation-section {
         padding-top: 0;
@@ -340,6 +399,11 @@ body {
         display: none;
     }
 
+    /**
+       Jumbotron
+    */
+
+
     #jumbotron {
         padding-top: 20vh;
     }
@@ -347,6 +411,11 @@ body {
     .slack-link span {
         padding-top: 4.5vh;
     }
+
+    /**
+        Product-explanation
+    */
+
 
     .product-explanation__wrapper {
         width: 90%;
@@ -365,6 +434,11 @@ body {
         left: 37%;
         top: 5vh;
     }
+
+    /**
+       Features
+    */
+
 
     #features {
         height: 170vh;
@@ -397,19 +471,49 @@ body {
         width: 40%;
     }
 
+    /**
+       Footer
+    */
+
+
     #footer {
         height: 10vh;
     }
 }
 
 @media only screen and (min-width: 1024px){
+    /**
+        Navigation
+    */
     #navigation-section {
         height: 10vh !important;
+    }
+
+    #navigation-section ul {
+        width: 60%;
     }
 
     #navigation-section ul li a {
         font-size: 1.6rem;
     }
+
+    .slack-link {
+        margin: auto;
+        width: 35%;
+        padding: 0;
+    }
+
+    .slack-link img {
+        width: 4vw;
+    }
+
+    .slack-link span{ 
+        transform: scale(1,1.3);
+    }
+
+    /**
+        Jumbotron
+    */
 
     #jumbotron__title {
         font-size: 4.5rem;
@@ -420,6 +524,10 @@ body {
         line-height: 2.5rem;
     }
 
+    /**
+        Product-explanation
+    */
+
     .product-explanation__wrapper p {
         font-size: 1.2rem;
     }
@@ -428,6 +536,10 @@ body {
         left: 41%;
         top: 5vh;
     }
+
+    /**
+        Features
+    */
 
     #features {
         height: 200vh;
@@ -445,6 +557,10 @@ body {
         margin-top: 10vh;
     }
 
+    /**
+        Add-to-slack
+    */
+
     .add-to-slack__title {
         font-size: 2.5rem;
     }
@@ -453,15 +569,31 @@ body {
         font-size: 1.3rem;
     }
 
+    /**
+        Footer
+    */
+
     #footer {
         font-size: .9rem;
     }
 }
 
 @media only screen and (min-width: 1200px){
-    #navigation-section ul li a {
-        font-size: 1.8rem;
+    /**
+       Navigation
+    */
+
+    #navigation-section ul {
+        width: 40%;
     }
+    
+    #navigation-section ul li a {
+        font-size: 1.2rem;
+    }
+
+    /**
+        Jumbotron
+    */
 
     #jumbotron__title {
         font-size: 4.9rem;
@@ -476,14 +608,14 @@ body {
         height: 13vh;
     }
     
-    .slack-link img {
-        width: 5vw;
-    }
-    
     .slack-link span {
         font-size: 1.7rem;
         padding-top: 4.3vh;
     }
+
+    /**
+       Product-explanation
+    */
 
     .product-explanation__wrapper p {
         font-size: 1.4rem;
@@ -493,6 +625,10 @@ body {
         left: 43%;
         top: 5.5vh;
     }
+
+    /**
+        Features
+    */
 
     .features__card {
         width: 30% !important;
@@ -509,6 +645,10 @@ body {
     #features {
         height: 110vh;
     }
+
+    /**
+        Footer
+    */
 
     #to-top {
         width: 5%;
