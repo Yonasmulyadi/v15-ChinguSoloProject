@@ -86,6 +86,9 @@ body {
     transform: scale(1, 1.4);
     font-weight: 400;
     color: rgba(0,0,0,.6);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .7s ease-in;
 }
 
 #jumbotron__title span {
@@ -96,6 +99,15 @@ body {
     color: white;
     font-size: 1.5rem;
     line-height: 2rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .7s ease-in;
+}
+
+#jumbotron .slack-link {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .7s ease-in;
 }
 
 .slack-link {
