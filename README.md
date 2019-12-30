@@ -4,7 +4,7 @@
 
    This landing page is created in order to satisfy the requirements for enrolling in Chingu cohort 15. Moreover, this project will perfectly demonstrate the creator's current ability in responsive web design. 
    
-   **Live link: **  https://yonasmulyadi.github.io/v15-ChinguSoloProject/.
+   **Live link:**  https://yonasmulyadi.github.io/v15-ChinguSoloProject/.
 
 ## Features
    This project includes:
